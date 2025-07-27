@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Agent Chatboard</title>
+    <style>
+        body {  
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f3f3f3;
+        }
+        #chat {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #messages {
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .user, .agent {
+            margin: 5px 0;
+        }
+        .user {
+            text-align: right;
+            color: blue;
+        }
+        .agent {
+            text-align: left;
+            color: green;
+        }
+        #queryInput {
+            width: 80%;
+            padding: 10px;
+        }
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat">
+        <h2>AI Agent</h2>
+        <div id="messages"></div>
+        <input type="text" id="queryInput" placeholder="Type your question..." />
+        <button onclick="sendQuery()">Send</button>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
